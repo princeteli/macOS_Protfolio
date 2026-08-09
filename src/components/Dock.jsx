@@ -1,10 +1,14 @@
 import { dockApps } from '#constants'
 import { Tooltip } from 'react-tooltip'
+
 import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import useWindowStore from '#store/window'
 
 const Dock = () => {
+
+  const { openWindow, closeWindow, windows } = useWindowStore()
 
   const dockRef = useRef(null)
 
@@ -47,20 +51,34 @@ const Dock = () => {
       duration: 0.3,
       ease: "power1.out"
     })
-  )
-  dock.addEventListener('mousemove', handleMouseMove)
-  dock.addEventListener('mouseleave', resetIcons)
+    )
+    dock.addEventListener('mousemove', handleMouseMove)
+    dock.addEventListener('mouseleave', resetIcons)
 
 
-  return ()=>{
-    dock.removeEventListener('mousemove', handleMouseMove)
-  dock.removeEventListener('mouseleave', resetIcons)
-  }
+    return () => {
+      dock.removeEventListener('mousemove', handleMouseMove)
+      dock.removeEventListener('mouseleave', resetIcons)
+    }
   }, [])
 
 
   const toggleApp = (app) => {
     // todo doce logic
+    if (!app.canOpen) return
+
+    const window = windows[app.id]
+
+    if(!window){
+      console.error(`window is not finr ${app.id}`)
+      return
+    }
+
+    if (window.isOpen) {
+      closeWindow(app.id)
+    } else {
+      openWindow(app.id)
+    }
   }
 
 
