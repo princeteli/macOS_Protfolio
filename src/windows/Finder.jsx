@@ -15,40 +15,40 @@ const Finder = () => {
   const { activeLocation, setActiveLocation } = useLocationStore()
 
 
-  const renderList = (name, item) => (
-
+  const renderList = (name, items, keyPrefix) => (
     <div>
       <h3>{name}</h3>
+
       <ul>
-        {
-          item.map((item) => (
+        {items.map((item) => (
+          <li
+            key={`${keyPrefix}-${item.id}`}
+            onClick={() => setActiveLocation(item)}
+            className={clsx(
+              "cursor-pointer",
+              item.id === activeLocation?.id ? "active" : "not-active"
+            )}
+          >
+            <img
+              src={item.icon}
+              className="w-4"
+              alt={item.name}
+            />
 
-            <li
-              key={item.id}
-              onClick={() => setActiveLocation(item)}
-              className={clsx("cursor-pointer", item.id == activeLocation.id ? "active" : "not-active")}
-
-            >
-              <img
-                src={item.icon}
-                className='w-4'
-                alt={item.name}
-              />
-              <p className='text-sm font-medium truncate'>
-                {item.name}
-              </p>
-            </li>
-          ))}
+            <p className="text-sm font-medium truncate">
+              {item.name}
+            </p>
+          </li>
+        ))}
       </ul>
     </div>
-
   )
 
   const openItem = (item) => {
     if (item.fileType === 'pdf') return openWindow('resume')
     if (item.kind === 'folder') return setActiveLocation(item)
     if (['fig', 'url'].includes(item.fileType) && item.href) return window.open(item.href, "_blank")
-    
+
     openWindow(`${item.fileType}${item.kind}`, item)
   }
 
@@ -60,10 +60,10 @@ const Finder = () => {
       </div>
 
       <div className='bg-white flex h-full'>
-        <div className='sidebar'>
-          {renderList("Favorites", Object.values(locations))}
-          {renderList("My Projects", locations.work.children)}
-        </div >
+        <div className="sidebar">
+          {renderList("Favorites", Object.values(locations), "favorite")}
+          {renderList("My Projects", locations.work.children, "project")}
+        </div>
 
         <ul className='content'>
           {activeLocation?.children.map((item) => (

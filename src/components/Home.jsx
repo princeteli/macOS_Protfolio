@@ -5,36 +5,38 @@ import { useGSAP } from "@gsap/react"
 import clsx from "clsx"
 import { Draggable } from "gsap/Draggable"
 
-
-
 const projects = locations.work?.children ?? []
 
 const Home = () => {
   const { openWindow } = useWindowStore()
-  const { setActiveLocation } = useLocationStore
+  const { setActiveLocation } = useLocationStore()
 
   const hancleOpen = (project) => {
     setActiveLocation(project)
     openWindow("finder")
   }
 
-
   useGSAP(() => {
-    Draggable.create('.folder',)
+    Draggable.create(".folder")
   }, [])
 
   return (
-    <section id='home'>
+    <section id="home">
       <ul>
         {projects.map((project) => (
           <li
             key={project.id}
-            className={clsx("group folder",
+            className={clsx(
+              "group folder",
               project.windowPosition
             )}
             onClick={() => hancleOpen(project)}
           >
-            <img className="cursor-pointer" src="/images/folder.png" alt={project.name} />
+            <img
+              className="cursor-pointer"
+              src="/images/folder.png"
+              alt={project.name}
+            />
             <p>{project.name}</p>
           </li>
         ))}
