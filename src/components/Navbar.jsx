@@ -15,7 +15,7 @@ const Navbar = () => {
 
         <ul>
           {navLinks.map(({ id, name, type }) => (
-            <li className='hover:text-white cursor-pointer' key={id} onClick={()=>openWindow(type)}>{name}</li>
+            <li className='hover:text-white cursor-pointer' key={id} onClick={() => openWindow(type)}>{name}</li>
           ))}
         </ul>
       </div>
@@ -31,9 +31,9 @@ const Navbar = () => {
           }
         </ul>
 
-       <time dateTime={dayjs().toISOString()}>
-  {dayjs().format('ddd MMM D h:mm A')}
-</time>
+        <time dateTime={dayjs().toISOString()}>
+          {dayjs().format('ddd MMM D h:mm A')}
+        </time>
       </div>
 
     </nav>

@@ -7,7 +7,7 @@ import React from 'react'
 const Terminal = () => {
   return (
     <>
-      <div id='window-header'>
+      <div id='window-header' data-drag-handle>
         <WindowControls target='terminal'/>
         <h2>TECH STACK</h2>
       </div>

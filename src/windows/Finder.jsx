@@ -54,7 +54,7 @@ const Finder = () => {
 
   return (
     <>
-      <div id='window-header'>
+      <div id='window-header' data-drag-handle>
         <WindowControls target="finder" />
         <Search className='icon' />
       </div>
