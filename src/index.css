@@ -7,7 +7,6 @@ body {
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url("/images/wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,7 +126,7 @@ body {
       /* Show icon symbol on hover (set by JS hovered state) */
       .win-ctrl-icon {
         @apply text-[8px] font-black leading-none select-none;
-        color: rgba(0,0,0,0.55);
+        color: rgba(0, 0, 0, 0.55);
       }
     }
 
