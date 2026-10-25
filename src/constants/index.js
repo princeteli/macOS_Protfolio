@@ -257,8 +257,8 @@ const WORK_LOCATION = {
       name: "Tic Tac Toe Game",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      position: "top-15 left-5",
+      windowPosition: "top-[17vh] left-4",
       children: [
         {
           id: 1,
@@ -286,6 +286,454 @@ const WORK_LOCATION = {
       ],
     },
 
+    // ▶ Project 3
+    {
+      id: 7,
+      name: "All Practice Project",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-30",
+      windowPosition: "top-[30vh] left-5",
+      children: [
+        // 01 — To-do List
+        {
+          id: 1,
+          name: "01 To-do List.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "01 — To-do List",
+          description: [
+            "Built a to-do list application using HTML, CSS, and JavaScript.",
+            "Implemented task creation, completion, and deletion.",
+            "Practiced DOM manipulation and event handling.",
+          ],
+        },
+        {
+          id: 2,
+          name: "01 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/01%20to-do-list",
+        },
+
+        // 02 — Calculator
+        {
+          id: 3,
+          name: "02 Calculator.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "02 — Calculator",
+          description: [
+            "Built a calculator using HTML, CSS, and JavaScript.",
+            "Implemented basic arithmetic operations.",
+            "Practiced JavaScript logic and event handling.",
+          ],
+        },
+        {
+          id: 4,
+          name: "02 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/02%20calculator",
+        },
+
+        // 03 — Digital Clock
+        {
+          id: 5,
+          name: "03 Digital Clock.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "03 — Digital Clock",
+          description: [
+            "Built a digital clock using HTML, CSS, and JavaScript.",
+            "Displayed the current time dynamically.",
+            "Practiced Date methods and setInterval.",
+          ],
+        },
+        {
+          id: 6,
+          name: "03 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/03%20digital-clock",
+        },
+
+        // 04 — Tip Calculator
+        {
+          id: 7,
+          name: "04 Tip Calculator.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "04 — Tip Calculator",
+          description: [
+            "Built a tip calculator using HTML, CSS, and JavaScript.",
+            "Calculated tips and total bills based on user input.",
+            "Practiced mathematical operations and form handling.",
+          ],
+        },
+        {
+          id: 8,
+          name: "04 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/04%20tip-calculator",
+        },
+
+        // 05 — Weather App
+        {
+          id: 9,
+          name: "05 Weather App.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "05 — Weather App",
+          description: [
+            "Built a weather application using HTML, CSS, JavaScript, and a Weather API.",
+            "Fetched weather information from an external API.",
+            "Practiced asynchronous JavaScript and API integration.",
+          ],
+        },
+        {
+          id: 10,
+          name: "05 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/05%20weather-app",
+        },
+
+        // 06 — Quote Generator
+        {
+          id: 11,
+          name: "06 Quote Gen.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "06 — Quote Generator",
+          description: [
+            "Built a quote generator using HTML, CSS, and JavaScript.",
+            "Displayed quotes through random selection.",
+            "Practiced arrays and DOM manipulation.",
+          ],
+        },
+        {
+          id: 12,
+          name: "06 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/06%20quote%20generator",
+        },
+
+        // 07 — Countdown Timer
+        {
+          id: 13,
+          name: "07 Countdown.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "07 — Countdown Timer",
+          description: [
+            "Built a countdown timer using HTML, CSS, and JavaScript.",
+            "Implemented countdown functionality using timing methods.",
+            "Practiced time calculations and event handling.",
+          ],
+        },
+        {
+          id: 14,
+          name: "07 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/07%20countdown-timer",
+        },
+
+        // 08 — Random Password Generator
+        {
+          id: 15,
+          name: "08 Password Gen.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "08 — Random Password Generator",
+          description: [
+            "Built a random password generator using HTML, CSS, and JavaScript.",
+            "Generated passwords using different character combinations.",
+            "Practiced strings, randomization, and JavaScript logic.",
+          ],
+        },
+        {
+          id: 16,
+          name: "08 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/08%20random-password-generator",
+        },
+
+        // 09 — BMI Calculator
+        {
+          id: 17,
+          name: "09 BMI Calculator.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "09 — BMI Calculator",
+          description: [
+            "Built a BMI calculator using HTML, CSS, and JavaScript.",
+            "Calculated BMI using height and weight inputs.",
+            "Practiced form handling and mathematical operations.",
+          ],
+        },
+        {
+          id: 18,
+          name: "09 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/09%20bmi-calculator",
+        },
+
+        // 10 — Simple Quiz App
+        {
+          id: 19,
+          name: "10 Simple Quiz.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "10 — Simple Quiz App",
+          description: [
+            "Built a quiz application using HTML, CSS, and JavaScript.",
+            "Implemented question selection and score calculation.",
+            "Practiced arrays, conditions, and event handling.",
+          ],
+        },
+        {
+          id: 20,
+          name: "10 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/10%20simple-quiz-app",
+        },
+
+        // 11 — Color Picker
+        {
+          id: 21,
+          name: "11 Color Picker.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "11 — Color Picker",
+          description: [
+            "Built a color picker using HTML, CSS, and JavaScript.",
+            "Allowed users to select colors and view their values.",
+            "Practiced color inputs and DOM manipulation.",
+          ],
+        },
+        {
+          id: 22,
+          name: "11 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/11%20color%20picker",
+        },
+
+        // 12 — Tic-Tac-Toe Game
+        {
+          id: 23,
+          name: "12 Tic-Tac-Toe.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "12 — Tic-Tac-Toe Game",
+          description: [
+            "Built a Tic-Tac-Toe game using HTML, CSS, and JavaScript.",
+            "Implemented player turns and winning-condition checks.",
+            "Practiced arrays, game logic, and event handling.",
+          ],
+        },
+        {
+          id: 24,
+          name: "12 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/12%20tic-tac-toe%20game",
+        },
+
+        // 13 — Stopwatch
+        {
+          id: 25,
+          name: "13 Stopwatch.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "13 — Stopwatch",
+          description: [
+            "Built a stopwatch using HTML, CSS, and JavaScript.",
+            "Implemented start, stop, and reset functionality.",
+            "Practiced timing methods and time calculations.",
+          ],
+        },
+        {
+          id: 26,
+          name: "13 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/13%20stopwatch",
+        },
+
+        // 14 — Guess the Number
+        {
+          id: 27,
+          name: "14 Guess Number.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "14 — Guess the Number",
+          description: [
+            "Built a number guessing game using HTML, CSS, and JavaScript.",
+            "Generated random numbers and checked user guesses.",
+            "Practiced conditionals, randomization, and game logic.",
+          ],
+        },
+        {
+          id: 28,
+          name: "14 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/14%20guess-the-number-game",
+        },
+
+        // 15 — Expense Tracker
+        {
+          id: 29,
+          name: "15 Expense Tracker.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "15 — Expense Tracker",
+          description: [
+            "Built an expense tracker using HTML, CSS, and JavaScript.",
+            "Implemented expense entry and expense tracking.",
+            "Practiced arrays, objects, and DOM manipulation.",
+          ],
+        },
+        {
+          id: 30,
+          name: "15 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/15%20expense-tracker-app",
+        },
+
+        // 16 — Character Counter
+        {
+          id: 31,
+          name: "16 Char Counter.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "16 — Character Counter",
+          description: [
+            "Built a character counter using HTML, CSS, and JavaScript.",
+            "Counted characters dynamically as users typed.",
+            "Practiced input events and string properties.",
+          ],
+        },
+        {
+          id: 32,
+          name: "16 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/16%20Character%20counter",
+        },
+
+        // 17 — Palindrome Checker
+        {
+          id: 33,
+          name: "17 Palindrome.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "17 — Palindrome Checker",
+          description: [
+            "Built a palindrome checker using HTML, CSS, and JavaScript.",
+            "Checked whether text reads the same forward and backward.",
+            "Practiced string manipulation and comparison logic.",
+          ],
+        },
+        {
+          id: 34,
+          name: "17 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/17%20palindrome%20checker",
+        },
+
+        // 18 — Background Color Changer
+        {
+          id: 35,
+          name: "18 BG Changer.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "18 — Background Color Changer",
+          description: [
+            "Built a background color changer using HTML, CSS, and JavaScript.",
+            "Changed the page background through user interaction.",
+            "Practiced DOM styling and event listeners.",
+          ],
+        },
+        {
+          id: 36,
+          name: "18 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/18%20background%20color%20changer",
+        },
+
+        // 19 — Image Slider
+        {
+          id: 37,
+          name: "19 Image Slider.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          subtitle: "19 — Image Slider",
+          description: [
+            "Built an image slider using HTML, CSS, and JavaScript.",
+            "Implemented navigation between images.",
+            "Practiced arrays, event handling, and DOM manipulation.",
+          ],
+        },
+        {
+          id: 38,
+          name: "19 Live URL",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/19%20image%20slider",
+        },
+      ],
+
+    },
   ],
 };
 

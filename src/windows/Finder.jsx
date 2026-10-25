@@ -53,38 +53,38 @@ const Finder = () => {
   }
 
   return (
-    <>
-      <div id='window-header' data-drag-handle>
+    <div className='flex flex-col h-full w-full select-none'>
+      <div id='window-header' data-drag-handle className='flex-shrink-0'>
         <WindowControls target="finder" />
         <Search className='icon' />
       </div>
 
-      <div className='bg-white flex h-full'>
+      <div className='bg-white flex flex-1 min-h-0 overflow-hidden'>
         <div className="sidebar">
           {renderList("Favorites", Object.values(locations), "favorite")}
           {renderList("My Projects", locations.work.children, "project")}
         </div>
 
         <ul className='content'>
-          {activeLocation?.children.map((item) => (
-            <li key={item.id}
-              className={`cursor-pointer ${item.position}`}
+          {activeLocation?.children?.map((item) => (
+            <li
+              key={item.id}
+              className="cursor-pointer group"
               onClick={() => openItem(item)}
+              title={item.name}
             >
               <img
-                src={item.icon} alt={item.name}
+                src={item.icon}
+                alt={item.name}
               />
-              <p className='text-sm font-medium truncate'>
+              <p className='text-xs font-medium text-gray-800 text-center truncate w-full'>
                 {item.name}
               </p>
             </li>
           ))}
         </ul>
-      </div >
-
-
-
-    </>
+      </div>
+    </div>
   )
 }
 
