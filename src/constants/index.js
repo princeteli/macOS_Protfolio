@@ -75,7 +75,7 @@ const dockApps = [
     id: "trash",
     name: "Archive", // was "Trash"
     icon: "trash.png",
-    canOpen: false,
+    canOpen: true,
   },
 ];
 
@@ -219,7 +219,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Todo List App",
+      name: "Royal King Gym",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -227,25 +227,25 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Todo Project.txt",
+          name: "RoyalKingGym.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Designed and built a dynamic task management application featuring full CRUD operations",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "Built RoyalKingGym — a modern gym website with a bold, premium design using Next.js and Tailwind CSS.",
+            "Features an eye-catching hero section, membership plans, trainer profiles, and a fully responsive layout across all devices.",
+            "Tailwind CSS powers the sleek dark theme, smooth hover effects, and consistent spacing throughout the site.",
+            "Optimized with Next.js for lightning-fast page loads, clean routing, and SEO-friendly structure right out of the box.",
           ],
         },
         {
           id: 1,
-          name: "todo_list_app.com",
+          name: "RoyalKingGym.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://todolistapphackthon.netlify.app",
+          href: "https://v0-gym-navbar-component.vercel.app/",
           position: "top-30 left-30",
         },
       ],
@@ -254,7 +254,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "Tic Tac Toe Game",
+      name: "DSA-Visualizer",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-15 left-5",
@@ -262,25 +262,25 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Project.txt",
+          name: "Dsa-Visulizer.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "Built an interactive full-stack game with real-time multiplayer capability and responsive design.",
-            "Created backend REST APIs to store game history, leaderboards, and user stats in MongoDB.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "Built a DSA Visualizer in React that brings data structures and algorithms to life through smooth, interactive animations.",
+            "Visualizes key algorithms like Bubble Sort, Merge Sort, Binary Search, and graph traversals (BFS, DFS) step by step.",
+            "Users can control animation speed, input custom data, and watch each comparison and swap happen in real time.",
+            "Built entirely with React — no backend needed — using component state and hooks to drive every animation frame.",
           ],
         },
         {
           id: 2,
-          name: "todo_list_app.com",
+          name: "dsa-visualizer.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://tic-tac-toe-game-by-prince.netlify.app/",
+          href: "https://dsa-visualizer-five-mauve.vercel.app/",
           position: "top-20 left-20",
         },
       ],
@@ -289,7 +289,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "All Practice Project",
+      name: "Practice Projects",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-30",
@@ -315,7 +315,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/01%20to-do-list",
+          href: "https://todolistapphackthon.netlify.app/",
         },
 
         // 02 — Calculator
@@ -338,7 +338,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/02%20calculator",
+          href: "https://calculator-by-prince-teli.netlify.app/",
         },
 
         // 03 — Digital Clock
@@ -361,7 +361,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/03%20digital-clock",
+          href: "https://digital-clock-by-prince.netlify.app/",
         },
 
         // 04 — Tip Calculator
@@ -384,7 +384,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/04%20tip-calculator",
+          href: "https://tip-calculator-by-prince.netlify.app/",
         },
 
         // 05 — Weather App
@@ -407,7 +407,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/05%20weather-app",
+          href: "https://weather-app-by-prince-teli.netlify.app/",
         },
 
         // 06 — Quote Generator
@@ -430,7 +430,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/06%20quote%20generator",
+          href: "https://quote-generator-by-prince.netlify.app/",
         },
 
         // 07 — Countdown Timer
@@ -453,7 +453,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/07%20countdown-timer",
+          href: "https://countdown-timer-by-prince.netlify.app/",
         },
 
         // 08 — Random Password Generator
@@ -476,7 +476,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/08%20random-password-generator",
+          href: "https://randompassword-generator-by-prince.netlify.app/",
         },
 
         // 09 — BMI Calculator
@@ -499,7 +499,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/09%20bmi-calculator",
+          href: "https://bmi-calculator-create-by-prince.netlify.app/",
         },
 
         // 10 — Simple Quiz App
@@ -522,7 +522,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/10%20simple-quiz-app",
+          href: "https://simple-quiz-app-by-prince.netlify.app/",
         },
 
         // 11 — Color Picker
@@ -545,7 +545,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/11%20color%20picker",
+          href: "https://color-picker-create-by-prince.netlify.app/",
         },
 
         // 12 — Tic-Tac-Toe Game
@@ -568,7 +568,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/12%20tic-tac-toe%20game",
+          href: "https://tic-tac-toe-game-by-prince.netlify.app/",
         },
 
         // 13 — Stopwatch
@@ -591,7 +591,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/13%20stopwatch",
+          href: "https://stop-watch-create-by-prince.netlify.app/",
         },
 
         // 14 — Guess the Number
@@ -637,100 +637,10 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/15%20expense-tracker-app",
+          href: "https://assengement8.netlify.app/pages/settings",
         },
 
-        // 16 — Character Counter
-        {
-          id: 31,
-          name: "16 Char Counter.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          subtitle: "16 — Character Counter",
-          description: [
-            "Built a character counter using HTML, CSS, and JavaScript.",
-            "Counted characters dynamically as users typed.",
-            "Practiced input events and string properties.",
-          ],
-        },
-        {
-          id: 32,
-          name: "16 Live URL",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/16%20Character%20counter",
-        },
-
-        // 17 — Palindrome Checker
-        {
-          id: 33,
-          name: "17 Palindrome.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          subtitle: "17 — Palindrome Checker",
-          description: [
-            "Built a palindrome checker using HTML, CSS, and JavaScript.",
-            "Checked whether text reads the same forward and backward.",
-            "Practiced string manipulation and comparison logic.",
-          ],
-        },
-        {
-          id: 34,
-          name: "17 Live URL",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/17%20palindrome%20checker",
-        },
-
-        // 18 — Background Color Changer
-        {
-          id: 35,
-          name: "18 BG Changer.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          subtitle: "18 — Background Color Changer",
-          description: [
-            "Built a background color changer using HTML, CSS, and JavaScript.",
-            "Changed the page background through user interaction.",
-            "Practiced DOM styling and event listeners.",
-          ],
-        },
-        {
-          id: 36,
-          name: "18 Live URL",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/18%20background%20color%20changer",
-        },
-
-        // 19 — Image Slider
-        {
-          id: 37,
-          name: "19 Image Slider.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          subtitle: "19 — Image Slider",
-          description: [
-            "Built an image slider using HTML, CSS, and JavaScript.",
-            "Implemented navigation between images.",
-            "Practiced arrays, event handling, and DOM manipulation.",
-          ],
-        },
-        {
-          id: 38,
-          name: "19 Live URL",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/princeteli/full-mern-stack/tree/main/frontend/19%20image%20slider",
-        },
+       
       ],
 
     },
@@ -839,6 +749,7 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  trash:   { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

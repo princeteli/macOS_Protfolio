@@ -1,9 +1,24 @@
 import gsap from 'gsap'
 import { Draggable } from 'gsap/Draggable'
-import { useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 
-import { Dock, Home, Navbar, Welcome } from '#components'
-import { Finder, Resume, Safari, Terminal, Text, ImageShow, Contact, Photos, About } from '#windows'
+// ── Eagerly loaded (always visible on mount) ──────────────────────────────────
+import Navbar  from '#components/Navbar'
+import Welcome from '#components/Welcome'
+import Dock    from '#components/Dock'
+import Home    from '#components/Home'
+
+// ── Lazy-loaded windows (split into separate chunks) ─────────────────────────
+const Terminal  = lazy(() => import('#windows/Terminal'))
+const Safari    = lazy(() => import('#windows/Safari'))
+const Resume    = lazy(() => import('#windows/Resume'))
+const Finder    = lazy(() => import('#windows/Finder'))
+const Text      = lazy(() => import('#windows/Text'))
+const ImageShow = lazy(() => import('#windows/ImageShow'))
+const Contact   = lazy(() => import('#windows/Contact'))
+const Photos    = lazy(() => import('#windows/Photos'))
+const About     = lazy(() => import('#windows/About'))
+const Archive   = lazy(() => import('#windows/Archive'))
 
 const videos = [
   '/videos/video1.mp4',
@@ -66,15 +81,21 @@ const App = () => {
         <Navbar />
         <Welcome />
         <Dock />
-        <Terminal />
-        <Safari />
-        <Resume />
-        <Finder />
-        <Text />
-        <ImageShow />
-        <Contact />
-        <Photos />
-        <About />
+
+        {/* Lazy-loaded windows — loaded only when first rendered */}
+        <Suspense fallback={null}>
+          <Terminal />
+          <Safari />
+          <Resume />
+          <Finder />
+          <Text />
+          <ImageShow />
+          <Contact />
+          <Photos />
+          <About />
+          <Archive />
+        </Suspense>
+
         <Home />
     </main>
   )

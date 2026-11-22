@@ -7,6 +7,7 @@ import ImageShow from "./ImageShow";
 import Contact from "./Contact";
 import Photos from "./Photos";
 import About from "./About";
+import Archive from "./Archive";
 
 export { 
   Terminal,
@@ -18,4 +19,5 @@ export {
   Contact,
   Photos,
   About,
+  Archive,
 }
