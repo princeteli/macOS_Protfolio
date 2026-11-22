@@ -3,7 +3,7 @@ import { Draggable } from 'gsap/Draggable'
 import { useEffect, useRef, useState } from 'react'
 
 import { Dock, Home, Navbar, Welcome } from '#components'
-import { Finder, Resume, Safari, Terminal, Text, ImageShow, Contact, Photos } from '#windows'
+import { Finder, Resume, Safari, Terminal, Text, ImageShow, Contact, Photos, About } from '#windows'
 
 const videos = [
   '/videos/video1.mp4',
@@ -74,6 +74,7 @@ const App = () => {
         <ImageShow />
         <Contact />
         <Photos />
+        <About />
         <Home />
     </main>
   )
